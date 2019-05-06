@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="200dp"
+                android:layout_height="181dp"
+                android:contentDescription="@string/default_img"
+                android:scaleType="fitCenter"
+                app:srcCompat="@mipmap/img_acu" />
+
+            <ImageButton
+                android:id="@+id/imageButton2"
+                android:layout_width="222dp"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/default_img"
+                android:scaleType="fitCenter"
+                app:srcCompat="@mipmap/img_bf1" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ImageButton
+                android:id="@+id/imageButton3"
+                android:layout_width="204dp"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/default_img"
+                android:scaleType="fitCenter"
+                app:srcCompat="@mipmap/img_mei" />
+
+            <ImageButton
+                android:id="@+id/imageButton4"
+                android:layout_width="210dp"
+                android:layout_height="157dp"
+                android:contentDescription="@string/default_img"
+                android:scaleType="fitCenter"
+                app:srcCompat="@mipmap/img_moka" />
+        </TableRow>
+
+    </TableLayout>
+</android.support.constraint.ConstraintLayout>
