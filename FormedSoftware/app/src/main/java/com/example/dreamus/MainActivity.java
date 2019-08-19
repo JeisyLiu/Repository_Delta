@@ -1,5 +1,6 @@
 package com.example.dreamus;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -13,12 +14,13 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
-import android.widget.TextView;
 import android.widget.ViewFlipper;
+import functions.homepageButtonRespon;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
+    public homepageButtonRespon hpb;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,6 +35,7 @@ public class MainActivity extends AppCompatActivity
                         .setAction("Action", null).show();
             }
         });
+
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         NavigationView navigationView = findViewById(R.id.nav_view);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -76,14 +79,21 @@ public class MainActivity extends AppCompatActivity
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
-        ViewFlipper vf0 = (ViewFlipper) findViewById(R.id.main_switcher);
+        ViewFlipper vf_main = (ViewFlipper) findViewById(R.id.main_switcher);
+        //ViewFlipper vf_setting = (ViewFlipper) findViewById(R.id.setting_switcher);
         // Handle navigation view item clicks here.
+
+        themeComponent themer;
+        themer = new themeComponent();
+
         int id = item.getItemId();
 
         if (id == R.id.nav_home) {
-            vf0.setDisplayedChild(0);
+            vf_main.setDisplayedChild(0);
             // Handle the camera action
-        } else if (id == R.id.nav_social) {
+        }else if (id == R.id.nav_user){
+
+        }else if (id == R.id.nav_social) {
 
         } else if (id == R.id.nav_collection) {
 
@@ -92,9 +102,10 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_share) {
 
         } else if (id == R.id.nav_setting) {
-            vf0.setDisplayedChild(1);
+            vf_main.setDisplayedChild(1);
         }else if (id == R.id.nav_personalize) {
-
+            vf_main.setDisplayedChild(2);
+            themer.themeTest();
         }
 
         DrawerLayout drawer = findViewById(R.id.drawer_layout);

@@ -1,55 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#008F1717">
 
     <TableLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="45dp">
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent" >
+            android:layout_height="match_parent">
 
             <ImageButton
                 android:id="@+id/imageButton"
-                android:layout_width="200dp"
-                android:layout_height="181dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="25"
+                android:adjustViewBounds="true"
+
                 android:contentDescription="@string/default_img"
                 android:scaleType="fitCenter"
-                app:srcCompat="@mipmap/img_acu" />
+                app:srcCompat="@color/colorBasic" />
 
             <ImageButton
                 android:id="@+id/imageButton2"
-                android:layout_width="222dp"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_weight="25"
+                android:adjustViewBounds="true"
                 android:contentDescription="@string/default_img"
                 android:scaleType="fitCenter"
-                app:srcCompat="@mipmap/img_bf1" />
+                app:srcCompat="@color/colorPrimary" />
         </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent" >
+            android:layout_height="match_parent">
 
             <ImageButton
                 android:id="@+id/imageButton3"
-                android:layout_width="204dp"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_weight="25"
+                android:adjustViewBounds="true"
                 android:contentDescription="@string/default_img"
                 android:scaleType="fitCenter"
-                app:srcCompat="@mipmap/img_mei" />
+                app:srcCompat="@color/colorAccent" />
 
             <ImageButton
                 android:id="@+id/imageButton4"
-                android:layout_width="210dp"
-                android:layout_height="157dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="25"
+                android:adjustViewBounds="true"
                 android:contentDescription="@string/default_img"
                 android:scaleType="fitCenter"
-                app:srcCompat="@mipmap/img_moka" />
+                app:srcCompat="@color/colorPrimaryDark" />
+
         </TableRow>
 
     </TableLayout>
+
 </android.support.constraint.ConstraintLayout>

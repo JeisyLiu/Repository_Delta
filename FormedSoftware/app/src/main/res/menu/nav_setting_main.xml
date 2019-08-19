@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_setting_alpha"
+            android:icon="@mipmap/ic_home"
+            android:title="@string/setting_nav_basic" />
+        <item
+            android:id="@+id/nav_setting_bravo"
+            android:icon="@mipmap/ic_collection"
+            android:title="@string/setting_nav_advanced" />
+        <item
+            android:id="@+id/nav_setting_charlie"
+            android:icon="@mipmap/ic_history"
+            android:title="@string/setting_nav_info" />
+        <item
+            android:id="@+id/nav_setting_delta"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="@string/setting_nav_legal" />
+    </group>
+    <item android:title="@string/setting_online">
+        <menu>
+            <item
+                android:id="@+id/nav_setting_apples"
+                android:icon="@mipmap/ic_social"
+                android:title="@string/setting_nav_log" />
+            <item
+                android:id="@+id/nav_setting_butter"
+                android:icon="@drawable/ic_menu_share"
+                android:title="@string/setting_nav_connect" />
+        </menu>
+    </item>
+</menu>

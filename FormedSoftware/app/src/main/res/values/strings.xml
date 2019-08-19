@@ -3,6 +3,8 @@
     <string name="default_name">UndefinedName</string>
     <string name="default_contain">UndefinedContain</string>
     <string name="default_img">undefined</string>
+    <string name="default_btn"></string>
+    <string name="default_switch">UndefinedSwitch</string>
 
     <string name="app_name">dreamus</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
@@ -36,5 +38,19 @@
     <string name="menu_personalize_cn">个性主题</string>
     <string name="social_concerned_cn">已关注</string>
     <string name="menu_share_cn">分享</string>
+    <string name="menu_network">网络</string>
+
+    <string name="setting_nav_basic">基础选项</string>
+    <string name="setting_nav_advanced">高级选项</string>
+    <string name="setting_nav_info">应用信息</string>
+    <string name="setting_nav_legal">用户须知</string>
+    <string name="setting_online">联网相关</string>
+    <string name="setting_nav_log">登录设置</string>
+    <string name="setting_nav_connect">联网选项</string>
+
+    <string name="confirm">(๑*◡*๑)</string>
+    <string name="cancel">(▼ヘ▼#)</string>
+
+    <string name="theme_title">设置主题</string>
 
 </resources>
